@@ -16,3 +16,26 @@ class FileHandler:
         with open(output_file, 'w') as file:
             for num in data:
                 file.write(f"{num}\n")
+
+class NumberProcessor(FileHandler):
+    def __init__(self, input_file):
+        super().__init__(input_file)
+
+    def get_even_numbers(self):
+        return [num for num in self.numbers if num % 2 == 0]
+
+    def get_odd_numbers(self):
+        return [num for num in self.numbers if num % 2 != 0]
+
+    def process(self):
+        self.read_numbers()
+
+        even_numbers = self.get_even_numbers()
+        odd_numbers = self.get_odd_numbers()
+
+        self.write_numbers("even.txt", even_numbers)
+        self.write_numbers("odd.txt", odd_numbers)
+
+        print("Processing complete!")
+        print(f"Even numbers: {even_numbers}")
+        print(f"Odd numbers: {odd_numbers}")
