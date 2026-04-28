@@ -28,7 +28,6 @@ class StudentProcessor(FileHandler):
     def get_highest_gwa(self):
         if not self.students:
             return None
-        # In GWA system, LOWER value = BETTER (1.0 is highest)
         return min(self.students, key=lambda x: x[1])
 
     def process(self):
@@ -45,3 +44,6 @@ class StudentProcessor(FileHandler):
         else:
             print("No valid student data found.")
 
+if __name__ == "__main__":
+    processor = StudentProcessor("students.txt")
+    processor.process()

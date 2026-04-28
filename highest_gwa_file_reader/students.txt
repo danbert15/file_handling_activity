@@ -1,0 +1,20 @@
+Peter Parker, 1.25
+Steve Rogers, 1.50
+Tony Stark, 1.00
+Bruce Banner, 1.00
+Thor Odinson, 1.25
+Loki Laufeyson, 1.50
+Stephen Strange, 1.50
+Scott Lang, 2.00
+T'Challa, 1.25
+Carol Denvers, 1.50
+Sam Wilson, 1.25
+Natasha Romanova, 1.25
+Norman Osborn, 1.50
+Harry Osborn, 2.00
+Gwen Stacy, 1.50
+Wade Wilson, 2.25
+Bucky Barnes, 2.00
+Eddie Brock, 1.50
+May Parker, 1.75
+Ben Parker, 2.25
