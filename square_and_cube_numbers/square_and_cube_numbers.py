@@ -30,3 +30,12 @@ class OddProcessor(NumberProcessor):
         odd_cubed = [num**3 for num in self.numbers if num % 2 != 0]
         self.write_to_file("triple.txt", odd_cubed)
         print("Odd numbers cubed written to triple.txt")
+
+if __name__ == "__main__":
+    input_file = "integers.txt"
+
+    even_processor = EvenProcessor(input_file)
+    odd_processor = OddProcessor(input_file)
+
+    even_processor.process()
+    odd_processor.process()
