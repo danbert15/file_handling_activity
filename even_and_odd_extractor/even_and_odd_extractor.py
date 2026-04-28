@@ -35,7 +35,7 @@ class NumberProcessor(FileHandler):
 
         self.write_numbers("even.txt", even_numbers)
         self.write_numbers("odd.txt", odd_numbers)
-
+    
         print("Processing complete!")
         print(f"Even numbers: {even_numbers}")
         print(f"Odd numbers: {odd_numbers}")
