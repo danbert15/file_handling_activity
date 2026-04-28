@@ -18,3 +18,15 @@ class NumberProcessor:
         with open(output_file, 'w') as file:
             for num in data:
                 file.write(str(num) + "\n")
+
+class EvenProcessor(NumberProcessor):
+    def process(self):
+        even_squared = [num**2 for num in self.numbers if num % 2 == 0]
+        self.write_to_file("double.txt", even_squared)
+        print("Even numbers squared written to double.txt")
+
+class OddProcessor(NumberProcessor):
+    def process(self):
+        odd_cubed = [num**3 for num in self.numbers if num % 2 != 0]
+        self.write_to_file("triple.txt", odd_cubed)
+        print("Odd numbers cubed written to triple.txt")
