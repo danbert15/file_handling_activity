@@ -44,3 +44,4 @@ class StudentProcessor(FileHandler):
             print(f"GWA: {gwa}")
         else:
             print("No valid student data found.")
+
