@@ -39,3 +39,7 @@ class NumberProcessor(FileHandler):
         print("Processing complete!")
         print(f"Even numbers: {even_numbers}")
         print(f"Odd numbers: {odd_numbers}")
+
+if __name__ == "__main__":
+    processor = NumberProcessor("numbers.txt")
+    processor.process()
